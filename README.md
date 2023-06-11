@@ -38,9 +38,6 @@ type Options struct {
 }
 ```
 
-
-## Using
-
 ```go
 package yours
 
@@ -86,5 +83,4 @@ func RunStreamWithStderrPrintedInRed() error {
         "args",
     ).Err
 }
-
 ```
