@@ -1,4 +1,4 @@
-package cmdutils
+package easyexec
 
 import (
 	"bytes"

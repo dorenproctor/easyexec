@@ -1,4 +1,4 @@
-package cmdutils
+package easyexec
 
 // Wraps a string in ANSI that makes it red
 func Red(s string) string {

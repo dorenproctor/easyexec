@@ -1,6 +1,4 @@
-package cmdutils
-
-import "io"
+package easyexec
 
 type Output struct {
 	Err    error
@@ -8,11 +6,12 @@ type Output struct {
 	Stdout string
 }
 
-type Input struct {
-	// Defaults to Stdout pipe
-	StreamOut io.ReadCloser
-	// Defaults to Stderr pipe
-	StreamErr io.ReadCloser
+// Options for RunStream()
+type Options struct {
+	// If nil, defaults to fmt.Print(s)
+	PrintOut func(s string)
+	// If nil, defaults to fmt.Fprint(os.Stderr, s)
+	PrintErr func(s string)
 	// If true, wrap text printed to StreamErr in red ANSI
 	StreamErrRed bool
 }
