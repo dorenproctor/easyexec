@@ -1,4 +1,4 @@
-package easyexec
+package utils
 
 // Wraps a string in ANSI that makes it red
 func Red(s string) string {

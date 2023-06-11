@@ -1,4 +1,4 @@
-package easyexec
+package utils
 
 import "os/exec"
 
