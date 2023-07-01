@@ -4,7 +4,7 @@
 
 `easyexec` is a simple wrapper around the built-in `os/exec` library. While it's very flexible, I don't find the interface to `os/exec` to be friendly enough, so I made this small library to make running external commands in Go simple.
 
-This library is built entirely using the core Go library. The only dependency is [github.com/stretchr/testify](https://github.com/stretchr/testify) for testing.
+This has 0 dependencies on third-party libraries! Only libraries built into the core Go library are used.
 
 ## Installing
 
