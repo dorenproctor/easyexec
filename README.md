@@ -18,7 +18,7 @@ func Run(command string, arg ...string) Output
 
 // Wrapper for exec.Cmd that streams stdout, stderr, and error and outputs them in a struct
 // Defaults are Stdout/Stderr pipes and not surrounding streamed stderr in red ANSI.
-// If o is nil, a default CmdInput is used
+// If o is nil, defaults are used
 func RunStream(o *Options, command string, arg ...string) Output
 
 type Output struct {

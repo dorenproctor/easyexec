@@ -8,7 +8,7 @@ import (
 //
 // Defaults are Stdout/Stderr pipes and not surrounding streamed stderr in red ANSI.
 //
-// If o is nil, a default CmdInput is used
+// If o is nil, defaults are used
 func RunStream(o *Options, command string, arg ...string) Output {
 	options := runstream.Options(*o)
 	return Output(runstream.RunStream(&options, command, arg...))
